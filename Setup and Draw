@@ -1,0 +1,37 @@
+function setup() {
+	createCanvas(windowWidth, windowHeight);
+	background(100);
+}
+
+function draw() {
+	switch (currentScreen) {
+ 		case STATE_START:
+ 			drawStartScreen()
+ 			break;
+			case STATE_ELEMENTARY:
+ 			drawElementaryScreen()
+ 			break;
+			case STATE_HIGHSCHOOL:
+ 			drawHighSchoolScreen()
+ 			break;
+ 		case STATE_GRADEK:
+ 			drawGradeKScreen()//red
+ 			break;
+		case STATE_GRADE123:
+			drawGrade123Screen()//green
+			break;
+		case STATE_GRADE456:
+			drawGrade456Screen()//purple
+			break;
+		case STATE_GRADE78:
+			drawGrade78Screen()//brown
+			break;
+			case STATE_JUNIOR:
+ 			drawJuniorScreen()//pink
+ 			break;
+			case STATE_SENIOR:
+			drawSeniorScreen()//maroon
+			break;
+			
+	}
+}
