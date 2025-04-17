@@ -1,0 +1,16 @@
+function drawElementaryScreen() {
+	createCanvas(windowWidth, windowHeight)
+	background('rgb(182,5,70)')
+	rectMode(CENTER)
+	rect(windowWidth/1.7, windowHeight/2.7 , 200, 75) //1-3
+	rect(windowWidth/1.7, windowHeight/1.7 , 200, 75) // 7-8
+	rect(windowWidth/2.5, windowHeight/2.7 , 200, 75) // K
+	rect(windowWidth/2.5, windowHeight/1.7 , 200, 75) // 456
+	textAlign(CENTER)
+	textSize(23)
+	text('KINDERGARTEN', windowWidth/2.5, windowHeight/2.6)
+	text('GRADES 1-3', windowWidth/1.7, windowHeight/2.6)
+	text('GRADES 4-6', windowWidth/2.5, windowHeight/1.66)
+	text('GRADES 7-8', windowWidth/1.7, windowHeight/1.66)
+	
+}
