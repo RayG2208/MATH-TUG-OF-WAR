@@ -1,0 +1,11 @@
+const STATE_START = 0
+const STATE_ELEMENTARY = 1
+const STATE_HIGHSCHOOL = 2
+const STATE_GRADEK = 3
+const STATE_GRADE123 = 4
+const STATE_GRADE456 = 5
+const STATE_GRADE78 = 6
+const STATE_JUNIOR = 7
+const STATE_SENIOR = 8
+
+let currentScreen = STATE_START
