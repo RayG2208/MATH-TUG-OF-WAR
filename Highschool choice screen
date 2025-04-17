@@ -1,0 +1,11 @@
+function drawHighSchoolScreen() {
+	createCanvas(windowWidth, windowHeight)
+	background('blue')
+	rectMode(CENTER)
+	rect(windowWidth/2, windowHeight/2.7 , 200, 75)
+	rect(windowWidth/2, windowHeight/1.7 , 200, 75)
+	textAlign(CENTER)
+	textSize(28)
+	text('JUNIOR', windowWidth/2, windowHeight/2.6)
+	text('SENIOR', windowWidth/2, windowHeight/1.66)
+}
