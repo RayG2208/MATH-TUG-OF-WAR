@@ -1,0 +1,14 @@
+function drawStartScreen() {
+	createCanvas(windowWidth, windowHeight)
+	background('rgb(182,5,70)')
+	textFont('Impact')
+	textSize(100)
+	text('WELCOME TO MATH TUG OF WAR', windowWidth/2, windowHeight/4)
+	rectMode(CENTER)
+	rect(windowWidth/1.46, windowHeight/1.7, 500, 200)
+	rect(windowWidth/3.2, windowHeight/1.7, 500, 200)
+	textAlign(CENTER)
+	textSize(75)
+	text('ELEMENTARY', windowWidth/3.2, windowHeight/1.6)
+	text('HIGHSCHOOL', windowWidth/1.46, windowHeight/1.6)
+}
