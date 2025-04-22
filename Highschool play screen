@@ -1,0 +1,4 @@
+function drawHighSchoolScreen() {
+	createCanvas(windowWidth, windowHeight)
+	background('blue')
+}
