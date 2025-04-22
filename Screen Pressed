@@ -1,0 +1,25 @@
+function mousePressed() {
+	if (currentScreen === STATE_START) {
+		if (mouseX > windowWidth / 3.2 - 250 && mouseX < windowWidth / 3.2 + 250 && mouseY > windowHeight / 1.7 - 100 && mouseY < windowHeight / 1.7 + 100) {
+			currentScreen = STATE_ELEMENTARY
+		} else if (mouseX > windowWidth / 1.46 - 250 && mouseX < windowWidth / 1.46 + 250 && mouseY > windowHeight / 1.7 - 100 && mouseY < windowHeight / 1.7 + 100) {
+			currentScreen = STATE_HIGHSCHOOL
+		}
+	} else if (currentScreen === STATE_HIGHSCHOOL) {
+		if (mouseX > windowWidth / 2 - 100 && mouseX < windowWidth / 2 + 100 && mouseY > windowHeight / 2.6 - 50 && mouseY < windowHeight / 2.6 + 50) {
+			currentScreen = STATE_JUNIOR
+		} else if (mouseX > windowWidth / 2 - 100 && mouseX < windowWidth / 2 + 100 && mouseY > windowHeight / 1.66 - 50 && mouseY < windowHeight / 1.66 + 50) {
+			currentScreen = STATE_SENIOR
+		}
+	} else if (currentScreen === STATE_ELEMENTARY) {
+		if (mouseX > windowWidth/2.5 - 100 && mouseX < windowWidth/2.5 + 100 && mouseY > windowHeight/2.7 - 50 && mouseY < windowHeight/2.7 + 50) {
+			currentScreen = STATE_GRADEK
+		} else if (mouseX > windowWidth/1.7 - 100 && mouseX < windowWidth/1.7 + 100 && mouseY > windowHeight/2.7 - 50 && mouseY < windowHeight/2.7 + 50) {
+			currentScreen = STATE_GRADE123
+		} else if (mouseX > windowWidth/2.5 - 100 && mouseX < windowWidth/2.5 + 100 && mouseY > windowHeight/1.7 - 50 && mouseY < windowHeight/1.7 + 50) {
+			currentScreen = STATE_GRADE456
+		} else if (mouseX > windowWidth/1.7 - 100 && mouseX < windowWidth/1.7 + 100 && mouseY > windowHeight/1.7 - 50 && mouseY < windowHeight/1.7 + 50) {
+			currentScreen = STATE_GRADE78
+		}
+	}
+}
