@@ -1,0 +1,6 @@
+function drawGradeKScreen() {
+	createCanvas(windowWidth, windowHeight)
+	background('rgb(255,242,0)')
+	
+	
+}
