@@ -1,0 +1,4 @@
+function drawGrade123Screen() {
+	createCanvas(windowWidth, windowHeight)
+	background('rgb(0,91,255)')
+}
