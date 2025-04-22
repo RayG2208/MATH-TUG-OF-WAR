@@ -1,0 +1,4 @@
+function drawGrade456Screen() {
+	createCanvas(windowWidth, windowHeight)
+	background('rgb(255,0,0)')
+}
