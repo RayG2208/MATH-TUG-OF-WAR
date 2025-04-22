@@ -1,4 +1,0 @@
-function drawSeniorScreen() {
-	createCanvas(windowWidth, windowHeight)
-	background('rgb(0,0,0)')
-}
