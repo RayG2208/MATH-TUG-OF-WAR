@@ -1,0 +1,4 @@
+function drawGrade78Screen() {
+	createCanvas(windowWidth, windowHeight)
+	background('rgb(0,255,179)')
+}
