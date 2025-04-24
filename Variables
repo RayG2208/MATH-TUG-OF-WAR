@@ -7,5 +7,5 @@ const STATE_GRADE456 = 5
 const STATE_GRADE78 = 6
 const STATE_JUNIOR = 7
 const STATE_SENIOR = 8
-
+let shapeImages = [];
 let currentScreen = STATE_START
