@@ -12,14 +12,25 @@ function mousePressed() {
 			currentScreen = STATE_SENIOR
 		}
 	} else if (currentScreen === STATE_ELEMENTARY) {
-		if (mouseX > windowWidth/2.5 - 100 && mouseX < windowWidth/2.5 + 100 && mouseY > windowHeight/2.7 - 50 && mouseY < windowHeight/2.7 + 50) {
+		if (mouseX > windowWidth / 2.5 - 100 && mouseX < windowWidth / 2.5 + 100 && mouseY > windowHeight / 2.7 - 50 && mouseY < windowHeight / 2.7 + 50) {
 			currentScreen = STATE_GRADEK
-		} else if (mouseX > windowWidth/1.7 - 100 && mouseX < windowWidth/1.7 + 100 && mouseY > windowHeight/2.7 - 50 && mouseY < windowHeight/2.7 + 50) {
+		} else if (mouseX > windowWidth / 1.7 - 100 && mouseX < windowWidth / 1.7 + 100 && mouseY > windowHeight / 2.7 - 50 && mouseY < windowHeight / 2.7 + 50) {
 			currentScreen = STATE_GRADE123
-		} else if (mouseX > windowWidth/2.5 - 100 && mouseX < windowWidth/2.5 + 100 && mouseY > windowHeight/1.7 - 50 && mouseY < windowHeight/1.7 + 50) {
+		} else if (mouseX > windowWidth / 2.5 - 100 && mouseX < windowWidth / 2.5 + 100 && mouseY > windowHeight / 1.7 - 50 && mouseY < windowHeight / 1.7 + 50) {
 			currentScreen = STATE_GRADE456
-		} else if (mouseX > windowWidth/1.7 - 100 && mouseX < windowWidth/1.7 + 100 && mouseY > windowHeight/1.7 - 50 && mouseY < windowHeight/1.7 + 50) {
+		} else if (mouseX > windowWidth / 1.7 - 100 && mouseX < windowWidth / 1.7 + 100 && mouseY > windowHeight / 1.7 - 50 && mouseY < windowHeight / 1.7 + 50) {
 			currentScreen = STATE_GRADE78
 		}
 	}
+}
+
+function keyPressed() {
+	let choice = parseInt(key) - 1;
+	if (choice === currentQuestion.correct) {
+		console.log("Correct!");
+		pickRandomQuestion(); // Load a new question
+	} else {
+		console.log("Incorrect.");
+	}
+	
 }
