@@ -1,0 +1,36 @@
+let questions = [{
+		question: "What is 5 + 3?",
+		choices: ["6", "7", "8", "9"],
+		correct: 2
+	},
+	{
+		question: "What is 10 - 4?",
+		choices: ["5", "6", "7", "8"],
+		correct: 1
+	},
+	{
+		question: "What is 5 - 4?",
+		choices: ["1", "6", "5", "10"],
+		correct: 0
+	},
+	{
+		question: "What is 14 - 4?",
+		choices: ["5", "9", "0", "10"],
+		correct: 3
+	},
+	{
+		question: "What is 0 - 5?",
+		choices: ["-5", "6", "10", "-4"],
+		correct: 0
+	},
+	{
+		question: "What is 6 - 2?",
+		choices: ["2", "6", "4", "1"],
+		correct: 2
+	},
+];
+
+
+function pickRandomQuestion() {
+	currentQuestion = random(questions);
+}
