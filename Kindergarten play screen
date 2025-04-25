@@ -1,6 +1,14 @@
 function drawGradeKScreen() {
 	createCanvas(windowWidth, windowHeight)
-	background('rgb(255,242,0)')
-	
-	
+	background('rgb(114,114,114)')
+
+	line(windowWidth / 2, 0, windowWidth / 2, windowHeight)
+	line(350, windowHeight / 3, windowWidth - 350, windowHeight / 3)
+
+	text(currentQuestion.question, windowWidth/2, windowHeight/2);
+
+	for (let i = 0; i < currentQuestion.choices.length; i++) {
+		text(`${i + 1}: ${currentQuestion.choices[i]}`, windowWidth/2.1, 600 + i * 30);
+	}
+
 }
